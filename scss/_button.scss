@@ -1,0 +1,98 @@
+%btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border: 2px solid white;
+  width: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+
+}
+
+.btn-prime {
+  @extend %btn;
+  background: $prime;
+  border: 2px solid $prime;
+
+  &:hover {
+    background: $primeShade;
+  }
+}
+
+.btn-second {
+  @extend %btn;
+  background: $second;
+  border: 2px solid $second;
+
+  &:hover {
+    background: $secondShade;
+  }
+}
+
+.btn-outline {
+  @extend %btn;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.btn-project {
+  @extend %btn;
+  color:$darkGray;
+  margin-top: 10rem;
+  border-color: $darkGray;
+  &:hover {
+    color: $grayShade;
+   }
+}
+
+.btn-small {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+}
+
+.btn-large {
+  padding: 1.9rem 5.1rem;
+  margin-top: 0;
+}
+
+//promo
+
+%promo {
+width: 245px;
+height: 251px;
+margin-right: 0;
+}
+
+.promo_1 {
+  @extend %promo;
+  background-color: #58dbd3;
+}
+
+.promo_2 {
+  @extend %promo;
+  background-color:  #e4ce9a;
+}
+
+.promo_3 {
+  @extend %promo;
+  background-color:  #ffa7ce;
+}
+
+.promo_4 {
+  @extend %promo;
+  background-color: #f2ca66;
+}

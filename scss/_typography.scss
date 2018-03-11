@@ -1,0 +1,114 @@
+// ---------------------------
+// Typography and text styles
+// ---------------------------
+
+//
+// ---------------------------
+
+html {
+  font-size: 10px; // static size
+}
+
+body {
+  color: #241e18;
+  margin: 0;
+}
+
+// Headings
+// ---------------------------
+.h1, .h2, .h3, .h4, .h6 {
+  font-family: "Merriweather";
+}
+
+.h1 {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.34);
+  color: #ffffff;
+  font-family: Impact;
+  font-size: 11.6rem;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 3.6rem;
+}
+
+.h3 {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.34);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 19.72px;
+  text-transform: uppercase;
+  // Text style for "I, ntroduc"
+  letter-spacing: 2.9rem;
+}
+
+.h4 {
+  font-size: 2.2rem;
+}
+
+.h5 {
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+}
+
+.h6 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+}
+
+a {
+
+color: #626262;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: 400;
+
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color:  #ffffff;
+  }
+  &.active {
+    color: #ffffff;
+  } 
+  }
+
+  .hero-nav ul li a {
+  @media (max-width: $screen-md){
+   color: black;
+   font-size: 12px;
+  }
+  } 
+
+//button's style for link
+ .unStyledLink{
+  &:visited { 
+  text-decoration: none;
+  color: $white;
+  }
+  &:focus {
+  text-decoration: none;
+  }
+  }
+
+// style for links
+ .link {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  color: $prime;
+  text-decoration: underline;
+  border-bottom: none;
+  }
+
+ .fa:hover{
+ color: $white;
+ }
+ 
+  
